@@ -11,3 +11,13 @@
 // Your CSS partials
 @import "components/index";
 @import "dashboards/index";
+
+body { 
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 1fr auto;
+}
+
+main {
+  overflow-y: auto;
+}
