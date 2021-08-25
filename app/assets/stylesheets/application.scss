@@ -11,8 +11,9 @@
 // Your CSS partials
 @import "components/index";
 @import "dashboards/index";
+@import "devise/index";
 
-body { 
+body {
   display: grid;
   height: 100vh;
   grid-template-rows: 1fr auto;
