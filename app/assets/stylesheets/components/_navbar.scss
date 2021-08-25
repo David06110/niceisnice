@@ -4,7 +4,7 @@ body {
 
 .navbar-lewagon {
   justify-content: space-between;
-  background: rgb(231, 230, 230);
+  background: #FF6978;
   padding: 15px;
 }
 
@@ -26,4 +26,10 @@ body {
   background-color: 214A7B; 
   border-spacing: 10px;                    
   box-shadow: 0 5px 5px rgba(9, 46, 128, 0.623);
+}
+
+.navbar-lewagon .img {
+  height: 10px;
+  width: 10px;
+
 }
