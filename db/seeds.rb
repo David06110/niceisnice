@@ -1,4 +1,4 @@
-require "open-uri"
+
 p "Clean de la DBz"
 Cashback.destroy_all
 Shop.destroy_all
