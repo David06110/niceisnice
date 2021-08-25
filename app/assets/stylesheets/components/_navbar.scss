@@ -1,12 +1,29 @@
+body {
+  color: 214A7B;
+}
+
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background: rgb(231, 230, 230);
+  padding: 15px;
 }
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
+  padding: 5px;
+  margin: 5px;
 }
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.navbar-lewagon .nav-link {
+  text-align: justify;
+  color: rgb(250, 250, 250);
+  letter-spacing: 3px;
+  border-radius: 25px; 
+  background-color: 214A7B; 
+  border-spacing: 10px;                    
+  box-shadow: 0 5px 5px rgba(9, 46, 128, 0.623);
 }
