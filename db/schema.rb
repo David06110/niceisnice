@@ -41,7 +41,7 @@ ActiveRecord::Schema.define(version: 2021_08_25_092737) do
     t.bigint "shop_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.decimal "amount"
+    t.decimal "amount", precision: 5, scale: 2
     t.index ["shop_id"], name: "index_cashbacks_on_shop_id"
     t.index ["user_id"], name: "index_cashbacks_on_user_id"
   end
