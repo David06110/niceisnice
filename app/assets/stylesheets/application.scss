@@ -22,3 +22,17 @@ body {
 main {
   overflow-y: auto;
 }
+
+.background {
+  background-image: linear-gradient(to bottom, #5090f0, #78a8f3, #9dc0f5, #c2d7f5, #e8eef6);
+}
+
+.txt-white-center {
+  color: white;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-left: 4px;
+  padding-right: 4px;
+  width: 100%;
+  height: 100%;
+}
