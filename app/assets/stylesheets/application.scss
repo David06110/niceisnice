@@ -17,6 +17,7 @@ body {
   display: grid;
   height: 100vh;
   grid-template-rows: 1fr auto;
+  background-image: linear-gradient(to bottom, #5090f0, #78a8f3, #9dc0f5, #c2d7f5, #e8eef6);
 }
 
 main {
@@ -24,7 +25,6 @@ main {
 }
 
 .background {
-  background-image: linear-gradient(to bottom, #5090f0, #78a8f3, #9dc0f5, #c2d7f5, #e8eef6);
   padding-left: 4px;
   padding-right: 4px;
 }
@@ -35,6 +35,6 @@ main {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding-left: 4px;
   padding-right: 4px;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 92vh;
 }
