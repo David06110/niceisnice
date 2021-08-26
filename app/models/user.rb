@@ -7,5 +7,5 @@ class User < ApplicationRecord
   # has_attachment :avatar       
   
   has_many :cashbacks
-
+  # has_many :shops through: :cashback
 end
