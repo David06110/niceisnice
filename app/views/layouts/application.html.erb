@@ -17,7 +17,7 @@
       <%= yield %>
     </main>
     <header>
-      <%= render 'shared/navbar' %>
+      <%= render 'shared/navbar' unless  @disable_navbar %>
     </header>
 
   </body>
