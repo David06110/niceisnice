@@ -1,3 +1,13 @@
+
+<h1>Find me in app/views/dashboards/home.html.erb</h1>
+
+<p><%= link_to "dashboard/show user detailed view", dashboard_path(current_user) %></p>
+
+<p><%= link_to "Log out", destroy_user_session_path, method: :delete %></p>
+
+
+
+
 <div>
   <div class="searchbar">
     <%= simple_form_for :search, url: root_path, method: :get do |f| %>
@@ -17,5 +27,7 @@
       <a class="btn btn-gradient" href="#">Scanner un ticket</a>
     </div>
 </div>
+
+
 
 
