@@ -1,14 +1,25 @@
-<h1>Dashboards#show</h1>
-<p>Find me in app/views/dashboards/show.html.erb</p>
+<div class="background txt-white-center">
 
 
-<p> <%= @cashback.amount %> </p>
+<form novalidate="novalidate" class="simple_form search" action="/" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+  <div class="search-form-control form-group">
+    <input class="form-control string required" type="text" name="search[query]" id="search_query" />
+    <button name="button" type="submit" class="btn btn-flat">
+      <i class="fas fa-search"></i> Search
+    </button>
+  </div>
+</form>
 
-
-<p> <%= @cashback.shop.name %> </p>
-<p> <%= @cashback.shop.address %> </p>
-
-
-
-
-<p> <%= @sum_cashback %> </p>
+<div class="container_informations">
+  <div class="cashback_immediat"><h2>Cashback immediat</h2>
+      <div class="now_amount"></div>
+        <p id="amount"><%= @cashback.amount %> €</p>
+        <p><strong> <%= @cashback.shop.name %> </strong> </p>
+        <p> <%= @cashback.shop.address %> </p>
+      </div>
+  <div class="cashback_total"><h2>Cashback total</h2>
+      <div class="total_amount"></div>
+        <p id="total"><%= @sum_cashback %> €</p>
+      </div>
+  </div>
+</div>
