@@ -5,6 +5,11 @@ class DashboardsController < ApplicationController
       .where(user: current_user)
       .pluck(:amount)
       .sum    
+  
+    @cashback = Cashback
+      .where(user: current_user)
+      .last
+      
   end
 
   def home
