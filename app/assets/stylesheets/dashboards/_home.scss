@@ -1,9 +1,17 @@
 // Specific CSS for your home-page
 
 .logo {
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .banner {
@@ -16,9 +24,9 @@
   margin: 0;
   padding: 5px;
   color: #FF6978;
-  justify-content: center;
+  text-align: center;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-  font-size: 30px;
+  font-size: 45px;
   font-weight: bold;
 }
 
@@ -26,27 +34,33 @@
   margin: 0;
   padding: 5px;
   font-weight: bold;
-  color: #214A7B;
-  justify-content: center;
-  font-size: 12px;
+  color: #09203be0;
+  text-align: center;
+  font-size: 19px;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
 .banner p {
   font-size: 10px;
   padding: 5px;
-  color: #eff2f5e7;
+  color: #fbfcfde7;
+  text-align: center;
   justify-content: center;
+  font-size: 15px;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
 
+.banner .scanticket {
+  text-align: center;
+}
+
 .btn-gradient {
-  background-color: linear-gradient(#214A7B, #21497b1f);
-  color: white;
+  background-color: #214A7B;
+  color: #ffffff;
   padding: 50px 54px;
   border-radius: 25px;
   font-weight: bold;
   text-align: justify;
-  justify-content: center;
+  object-position: center;
   transition: background 0.3s ease;
   border: 1px solid #0F60C4;
 }
@@ -56,6 +70,7 @@
   color: white;
 }
 body{
-  background: rgb(0,162,227);
-  background: radial-gradient(circle, rgba(0,162,227,1) 50%, rgba(33,74,123,1) 100%);;
-  }
+  
+  padding-left: 4px;
+  padding-right: 4px;
+}

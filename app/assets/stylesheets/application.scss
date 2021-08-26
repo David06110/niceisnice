@@ -14,8 +14,10 @@
 @import "devise/index";
 
 body {
+  background: linear-gradient(to bottom, #5090F0, #78A8F3, #9DC0F5, #C2D7F5, #E8EEF6);
   display: grid;
   height: 100vh;
+  width: 100vw;
   grid-template-rows: 1fr auto;
 }
 

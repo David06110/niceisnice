@@ -14,11 +14,11 @@
   <body>
     <main>
       <%= render 'shared/flashes' %>
+      <%= render 'shared/header'%>
       <%= yield %>
     </main>
-    <header>
-      <%= render 'shared/navbar' unless  @disable_navbar %>
-    </header>
+
+    <%= render 'shared/navbar' unless  @disable_navbar %>
 
   </body>
 </html>
