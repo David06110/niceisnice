@@ -1,29 +1,14 @@
 body {
-  color: 214A7B;
+  color: black;
 }
 
-.navbar-lewagon {
+.navbar-links {
   justify-content: space-between;
-  background: rgb(231, 230, 230);
-  padding: 15px;
-}
-
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-  padding: 5px;
-  margin: 5px;
-}
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-}
-
-.navbar-lewagon .nav-link {
-  text-align: justify;
-  color: rgb(250, 250, 250);
-  letter-spacing: 3px;
-  border-radius: 25px; 
+  background: #FF6978;
+  margin: 3px;
+  border-radius: 15px;
+  width: 370px;
+  height: 65px;
   background-color: 214A7B; 
-  border-spacing: 10px;                    
-  box-shadow: 0 5px 5px rgba(9, 46, 128, 0.623);
+  box-shadow: 0 3px 3px rgba(9, 46, 128, 0.623);
 }

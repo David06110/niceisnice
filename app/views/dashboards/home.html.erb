@@ -1,21 +1,33 @@
-<h1>Home</h1>
-<p>Find me in app/views/dashboards/home.html.erb</p>
-<p>Ceci est la couleur des titres en dark blue cf figma</p>
 
-<%= link_to "dashboard/show user detailed view", dashboard_path(current_user) %>
+<h1>Find me in app/views/dashboards/home.html.erb</h1>
 
-<%= link_to "Log out", destroy_user_session_path, method: :delete %>
+<p><%= link_to "dashboard/show user detailed view", dashboard_path(current_user) %></p>
+
+<p><%= link_to "Log out", destroy_user_session_path, method: :delete %></p>
+
 
 
 
 <div>
-<div class="banner" style="background-image: ;">
-  <div class="container">
-    <h1>Nice is Nice! <strong>l'application niçoise qui te permet de générer du cashback</strong> lorsque tu dépenses auprès des commerces locaux</h1>
-    <p>Convertis ton cashback en billet d'entrée aux évènements de ton choix!</p>
-    <a class="btn btn-flat" href="#">En savoir plus</a>
+  <div class="searchbar">
+    <%= simple_form_for :search, url: root_path, method: :get do |f| %>
+      <div class="search-form-control form-group">
+        <input class="form-control string required" type="text" name="search[query]" id="search_query" />
+        <button name="button" type="Rechercher" class="btn btn-flat">
+          <i class="fas fa-search"></i> Rechercher</button>
+      </div>
+    <% end %>
   </div>
+
+  <div class="banner" style="background-image: ;">
+    <div class="container">
+      <h1>Nice is Nice! </h1>
+      <h2>L'application niçoise qui te permet de générer du cashback lorsque tu dépenses auprès des <strong> commerces locaux </strong></h2>
+      <p>Convertis ensuite ton cashback en billet d'entrée aux évènements de ton choix!</p>
+      <a class="btn btn-gradient" href="#">Scanner un ticket</a>
+    </div>
 </div>
+
 
 
 
