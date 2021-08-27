@@ -16,7 +16,7 @@
 body {
   background: linear-gradient(to bottom, #5090F0, #78A8F3, #9DC0F5, #C2D7F5, #E8EEF6);
   display: grid;
-  height: 100vh;
+  height: calc(100vh - 25px);
   width: 100vw;
   grid-template-rows: 1fr auto;
   // background-image: linear-gradient(to bottom, #5090f0, #78a8f3, #9dc0f5, #c2d7f5, #e8eef6);
