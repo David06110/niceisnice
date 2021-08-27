@@ -2,27 +2,31 @@
 
 <div class="background txt-white-center">
   <div class="home-center">
-    <div class="logo">
-    <%= image_tag 'logo_cashback.png' %>
+    <div>
+      <%= image_tag 'logocashback.png', height:"70" %>
       <h1 class="mt-2">NICE is nice</h1>
     </div>
 
-<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-      <div class="form-group">
-        <%= f.input :email,
-                    required: false,
-                    autofocus: true,
-                    input_html: { autocomplete: "email" } %>
+  <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="form-group">
+      <%= f.input :email,
+                   required: false,
+                   autofocus: true,
+                   input_html: { autocomplete: "email" } %>
       </div>
+
       <div class="form-group">
         <%= f.input :password,
-                    required: false,
-                    input_html: { autocomplete: "current-password" } %>
+                     required: false,
+                     input_html: { autocomplete: "current-password" } %>
       </div>
+
       <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+
       <div class="form-actions">
         <%= f.button :submit, "Log in", class: "btn btn-primary" %>
       </div>
+
       <%= render "devise/shared/links" %>
     </form>
   </div>
