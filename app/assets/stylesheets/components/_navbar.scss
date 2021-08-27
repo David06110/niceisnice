@@ -1,8 +1,8 @@
 .navbar-links {
   justify-content: space-between;
   background: #FF6978;
-  border-radius: 15px;
-  // width: 100%;
+  // border-radius: 0px 0px 15px 15px;
+  width: 100%;
   width: 375px;
 }
 
@@ -18,9 +18,9 @@
   display: block;
   // width: 375px; // ici c'est chaque icon donc pas de 375 pour chaque icon
   // height: 65px;
-  background-color: 214A7B;
+  // background-color: 214A7B;
   // background-color: green;
 
-  box-shadow: 0 3px 3px rgba(9, 46, 128, 0.623);
+  // box-shadow: 0 3px 3px rgba(9, 46, 128, 0.623);
 
 }
