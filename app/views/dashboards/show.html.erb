@@ -5,7 +5,7 @@
       <div class="now_amount"></div>
         <p id="amount"><%= @cashback.nil? ? "0" : @cashback.amount %> €</p>
         <p><strong><%= @cashback.nil? ? " " : @cashback.shop.name %></strong></p>
-        <p> <%= @cashback.nil? ? " " : @cashback.address.name %> </p>
+        <p> <%= @cashback.nil? ? " " : @cashback.shop.address %> </p>
       </div>
 
       <div class="cashback_total">
