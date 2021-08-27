@@ -2,7 +2,8 @@
   justify-content: space-between;
   background: #FF6978;
   border-radius: 15px;
-  width: 100%;
+  // width: 100%;
+  width: 375px;
 }
 
 .nav-link {
@@ -15,9 +16,11 @@
   width: 35px;
   margin: auto;
   display: block;
-  width: 370px;
-  height: 65px;
+  // width: 375px; // ici c'est chaque icon donc pas de 375 pour chaque icon
+  // height: 65px;
   background-color: 214A7B;
+  // background-color: green;
+
   box-shadow: 0 3px 3px rgba(9, 46, 128, 0.623);
 
 }

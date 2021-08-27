@@ -26,7 +26,7 @@ class CashbacksController < ApplicationController
     
     response = http.request(request)
     @testcela = JSON.parse(response.read_body)
-    current_cb = @testcela[]
+    # current_cb = @testcela[]
 
 
     # binding.pry
