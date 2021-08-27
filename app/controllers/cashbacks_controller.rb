@@ -5,11 +5,6 @@ class CashbacksController < ApplicationController
   require 'mime/types'
   def new
     @new_cashback = Cashback.new
-    
-
-
-    
-
   end
 
   def create
@@ -25,15 +20,15 @@ class CashbacksController < ApplicationController
     request.set_form([['document', File.open(@file)]], 'multipart/form-data')
     
     response = http.request(request)
-    @testcela = JSON.parse(response.read_body)
-    # current_cb = @testcela[]
-
-
-    # binding.pry
+    @testcela = JSON.parse(response.body, symbolize_names: true)
     
-
-
-
+    @tk_current = @testcela[:document][:inference][:prediction][:total_incl][:value]
+  
+    @new_cashback.amount = (@tk_current * 5) / 100
+    @new_cashback.shop = Shop.first
+    @new_cashback.save!
+    
+    sleep(0.5)
 
     redirect_to '/dashboard'
   end

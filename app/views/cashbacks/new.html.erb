@@ -1,12 +1,6 @@
-<h1>Cashbacks#new</h1>
-<p>Find me in app/views/cashbacks/new.html.erb</p>
-<p>Api scan nouveau ticket</p>
-
-
-
-<%= form_with({model: @new_cashback}) do |f|%>
-  <%= f.file_field :ticket %>
-  <%= f.submit %>
-<% end %>
-json
-<%= @testcela %>
+<div>
+  <%= simple_form_for @new_cashback do |f|%>
+    <p><%= f.file_field :ticket %></p>
+    <P><%= f.submit %></p>
+  <% end %>
+</div>
