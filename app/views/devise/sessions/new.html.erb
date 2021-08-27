@@ -2,11 +2,7 @@
 
 <div class="background txt-white-center">
   <div class="home-center">
-    <div>
-      <%= image_tag 'logocashback.png', height:"70" %>
-      <h1 class="mt-2">NICE is nice</h1>
-    </div>
-
+    
   <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div class="form-group">
       <%= f.input :email,
