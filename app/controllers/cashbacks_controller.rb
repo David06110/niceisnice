@@ -4,7 +4,8 @@ class CashbacksController < ApplicationController
   require 'net/https'
   require 'mime/types'
   def new
-    @new_cashback = Cashback.new(user: current_user)
+    @new_cashback = Cashback.new
+    
 
 
     
@@ -12,6 +13,8 @@ class CashbacksController < ApplicationController
   end
 
   def create
+    @new_cashback = Cashback.new(user: current_user)
+
     url = URI("https://api.mindee.net/v1/products/mindee/expense_receipts/v3/predict")
     @file = params[:cashback][:ticket]
     
@@ -23,6 +26,10 @@ class CashbacksController < ApplicationController
     
     response = http.request(request)
     @testcela = JSON.parse(response.read_body)
+    current_cb = @testcela[]
+
+
+    # binding.pry
     
 
 
