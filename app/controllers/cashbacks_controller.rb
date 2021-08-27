@@ -24,13 +24,16 @@ class CashbacksController < ApplicationController
       @testcela = JSON.parse(response.body, symbolize_names: true)
       
       @tk_current = @testcela[:document][:inference][:prediction][:total_incl][:value]
-    
-      @new_cashback.amount = (@tk_current * 5) / 100
-      @new_cashback.shop = Shop.first
+      if @tk_current.present?
+        @new_cashback.amount = (@tk_current * 5) / 100
+        @new_cashback.shop = Shop.first
 
-      if @new_cashback.save!
-        sleep(0.5)
-        redirect_to '/dashboard'
+        if @new_cashback.save!
+          sleep(0.5)
+          redirect_to '/dashboard'
+        else
+          render :new
+        end
       else
         render :new
       end
