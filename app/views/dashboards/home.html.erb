@@ -3,7 +3,7 @@
         <%=image_tag("logocashback.png")%>
     </div>
 
-
+  <%= link_to "scan un ticket", new_cashback_path %>
 
     <div class="searchbar">
       <%= simple_form_for :search, url: root_path, method: :get do |f| %>
