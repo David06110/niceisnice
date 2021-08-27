@@ -4,12 +4,20 @@
   <div class="cashback_immediat"><h2>Cashback immediat</h2>
       <div class="now_amount"></div>
         <p id="amount"><%= @cashback.amount %> €</p>
-        <p><strong> <%= @cashback.shop.name %> </strong> </p>
+        <p><strong><%= @cashback.shop.name %></strong></p>
         <p> <%= @cashback.shop.address %> </p>
       </div>
-  <div class="cashback_total"><h2>Cashback total</h2>
-      <div class="total_amount"></div>
+
+      <div class="cashback_total">
+        <h2>Cashback total</h2>
+      </div>
+
+      <div class="total_amount">
         <p id="total"><%= @sum_cashback %> €</p>
       </div>
+      <div class="scanticket">
+        <a class="btn btn-gradient" href= "/cashbacks/new" >Scanner un ticket</a>
+      </div>
+
   </div>
 </div>
