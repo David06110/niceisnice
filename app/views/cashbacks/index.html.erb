@@ -1,2 +1,10 @@
 <h1>Cashbacks#index</h1>
 <p>Find me in app/views/cashbacks/index.html.erb</p>
+
+<ul>
+  <% @new_cashback.each do |cashback| %>
+    <li><%= cashback.id %></li>
+    <li><%= cashback.shop.name %></li>
+    <li><%= cashback.shop.address %></li>
+  <% end %>
+</ul>

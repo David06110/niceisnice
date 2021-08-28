@@ -7,6 +7,10 @@ class CashbacksController < ApplicationController
     @new_cashback = Cashback.new
   end
 
+  def index
+    @new_cashback = Cashback.all
+  end
+
   def create
     @new_cashback = Cashback.new(user: current_user)
 
