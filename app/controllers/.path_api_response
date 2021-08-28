@@ -1,0 +1,13 @@
+.api_request.status    "success"
+
+JSON.document.inference.pages[0].prediction.date.values[0].confidence
+JSON.document.inference.pages[0].prediction.date.values[0].content      us date to eu date
+
+JSON.document.inference.pages[0].prediction.address.confidence
+JSON.document.inference.pages[0].prediction.address.values
+
+JSON.document.inference.pages[0].prediction.name.confidence
+JSON.document.inference.pages[0].prediction.name.values
+
+JSON.document.inference.pages[0].prediction.total.confidence
+JSON.document.inference.pages[0].prediction.total.values[0].content.to_d
