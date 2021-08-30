@@ -33,9 +33,14 @@
   width: 100%;
 }
 
+.container {
+padding: 10px;
+
+}
 .card-product {
+  object-position: center;
   background-color: white;
-  padding: 13px;
+  padding: 11px;
   border-radius: 8px;
   width: 350px;
   margin: auto;
