@@ -1,27 +1,48 @@
-.search-form-control {
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.searchbar {
+  width: 100%;
   position: relative;
-  padding: 10px;
-  border-radius: 55px;
+  display: flex;
 }
 
-.search-form-control .btn {
+.searchTerm {
+  width: 100%;
+  border: 3px solid #214A7B;
+  border-right: none;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #214A7B;
+}
+
+.searchTerm:focus{
+  color: #214A7B;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #214A7B;
+  background: #214A7B;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
   position: absolute;
-  color: #FF6978;
-  top: 8px;
-  bottom: 8px;
-  right: 8px;
-  padding: 10px;
-}
-
-.search-form-control .form-control {
-  height: 3.5rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  border: 1px solid #E7E7E7;
-  border-radius: 20px;
-}
-
-.search-form-control .form-control:focus {
-  border: 1px solid #1EDD88;
-  outline: none !important;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
