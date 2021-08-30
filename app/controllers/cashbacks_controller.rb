@@ -8,7 +8,7 @@ class CashbacksController < ApplicationController
   end
 
   def index
-    @cashbacks = Cashback.where(user: current_user)
+    @cashbacks = Cashback.where(user: current_user).order("created_at DESC")
   end
 
   def create
