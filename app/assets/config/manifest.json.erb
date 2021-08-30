@@ -1,17 +1,25 @@
 {
   "background_color": "white",
-  "description": "Le Wagon is Europe's best coding bootcamp for creative people & entrepreneurs. Learn to code in 9 weeks with our fullstack coding bootcamp.",
+  "description": "La cashback citoyen qui vous fait sortir.",
   "display": "fullscreen",
   "name": "NICE is nice",
   "icons": [
-    <% files = Dir.entries(Rails.root.join("app/assets/images/icons/")).select {|f| !File.directory? f} %>
+    <% files = Dir.entries(Rails.root.join("app/assets/images/icons/")).select {|f| !File.directory? f
+    } %>
     <% files.each_with_index do |file, index| %>
-      <% match = file.match(/.+-(?<size>\d{2,3}x\d{2,3}).png/) %>
+      <% match = file.match(/.+-(?<size>\d{
+      2,
+      3
+    }x\d{
+      2,
+      3
+    }).png/) %>
       {
-        "src": "<%= image_path "icons/#{file}" %>",
-        "sizes": "<%= match && match[:size] %>",
-        "type": "image/png"
-      }<%= "," unless (files.size - 1) == index %>
+      "src": "<%= image_path "icons/#{file
+      }" %>",
+      "sizes": "<%= match && match[:size] %>",
+      "type": "image/png"
+    }<%= "," unless (files.size - 1) == index %>
     <% end %>
   ]
 }
