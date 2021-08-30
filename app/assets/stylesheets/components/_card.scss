@@ -1,7 +1,8 @@
 .cards {
   text-align: center;
   font-size: 22px;
-  margin: 16px;
+  margin: 10px;
+  padding: 10px;
   border-radius: 10px;
   display: grid;
   grid-gap: 5px;  
@@ -13,7 +14,7 @@
   background-image: cover linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
   background-position: center;
   color: white;
-  
+  padding: 5px;
   text-align: center;
   height: 200px;
 }
@@ -23,7 +24,8 @@
   transform: translate(-50%,-50%);
   left: 50%;
   top: 50%;
-  font-size:25px;
+  text-shadow: 3px 1px #FF6978;
+  font-size:22px;
   font-weight: bold;
 }
 

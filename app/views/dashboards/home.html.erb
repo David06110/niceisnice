@@ -1,8 +1,7 @@
 <div class="banner">
   <div class="container">
     <h1>Nice is Nice! </h1>
-    <h2>L'application niçoise qui te permet de générer du cashback lorsque tu dépenses auprès des <strong> commerces locaux </strong></h2>
-    <p>Convertis ensuite ton cashback en billet d'entrée aux évènements de ton choix!</p>
+    <h2>Le cashback citoyen <strong>qui te fait sortir</strong></h2>
   </div>
   <div class="scanticket">
     <a class="btn btn-gradient" href= "/cashbacks/new" >Scanner un ticket</a>
@@ -10,7 +9,7 @@
 </div>
 
 <div class="cards">
-  <p>Top 3 shops</p>
+  <h2>Top 3 shops</h2>
   <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))">
     <%=image_tag('shoptest1.jpg')%><%# Shop.photo to implement %>
     <span class="shop-title">Le primeur du coin</span> <%# Shop.name to implement %>
@@ -26,7 +25,8 @@
     <span class="shop-title">Traiteur Nice Garibaldi</span> <%# Shop.name to implement %>
   </div>
 
-  <div class="shopsbutton">
-    <a class="btn btn-gradient" href="#">Découvrir les commerces du réseau autour de moi</a>
+  <div class="shopsaround">
+    <a class="btn btn-solid" href= "/shops/show" >Découvrir les commerces du réseau</a>
   </div>
+
 </div>
