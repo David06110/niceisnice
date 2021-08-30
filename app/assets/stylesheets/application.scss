@@ -54,7 +54,7 @@ h2 {
 .btn-gradient {
   background-color: #214A7B;
   color: #ffffff;
-  padding: 35px 34px;
+  padding: 25px 20px;
   border-radius: 15px;
   text-align: center;
   object-position: center;
@@ -71,8 +71,24 @@ h2 {
   background-color: #214A7B;
   color: #ffffff;
   border-radius: 15px;
+  font-size: 0.8rem;
   text-align: center;
   object-position: center;
   transition: background 0.3s ease;
   border: 1px solid #214A7B;
 }
+
+.nav-item .fa-plus-circle {
+  font-size: 30px;
+  color:#214A7B; 
+}
+.nav-item .fa-store {
+   font-size: 30px;
+}
+ .nav-item .fa-calendar-alt {
+   font-size: 30px;
+ }
+.nav-item .fa-euro-sign {
+  font-size: 30px;
+  color:#214A7B; 
+ }
