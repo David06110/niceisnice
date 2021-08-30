@@ -1,0 +1,5 @@
+meta_product_name: "Nice is Nice"
+meta_title: "Nice is Nice - Le cashback citoyens qui te fait sortir"
+meta_description: "Optimise tes dépenses en générant du cashback auprès des commerces locaux et gagne tes billets d'entrées aux manifestations de ton choix!"
+meta_image: "cover.png" # should exist in `app/assets/images/`
+# twitter_account: "@product_twitter_account"   # required for Twitter Cards
