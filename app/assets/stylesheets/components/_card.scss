@@ -9,13 +9,19 @@
   grid-template-columns: 1fr;
 }
 
-.card-category {
+.card-category  {
   position: relative;
   background-position: center;
   color: white;
   text-align: center;
   height: 200px;
+  background: rgba(0,0,0,1);
+  img {
+    opacity: 65%;
+    
+  }
 }
+
 
 .card-category .shop-title {
   position: absolute;
