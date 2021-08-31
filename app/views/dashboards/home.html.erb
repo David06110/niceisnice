@@ -1,7 +1,7 @@
 <%# Now let's assume you have an Offer model and you want dynamic titles and descriptions for any products#show page. %>
 <%# <% content_for :meta_title, "#{@offer.name} is on #{DEFAULT_META["meta_product_name"]}" %>
-<%# <% content_for :meta_description, @offer.description %> %>
-<%# <% content_for :meta_image, cl_image_path(@offer.photo.path) %> %> %>
+<%# <% content_for :meta_description, @offer.description %>
+<%# <% content_for :meta_image, cl_image_path(@offer.photo.path) %>
 
 
 
@@ -19,17 +19,17 @@
 
 <div class="cards">
   <h2>Top 3 shops</h2>
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))">
-    <%=image_tag('shoptest1.jpg')%><%# Shop.photo to implement %>
+  <div class="card-category">
+    <%=image_tag('shoptest1.jpg')%>
     <span class="shop-title">Le primeur du coin</span> <%# Shop.name to implement %>
   </div>
 
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))">
+  <div class="card-category">
     <%=image_tag('shoptest2.jpg')%><%# Shop.photo to implement %>
     <span class="shop-title">Boutique prêt à porter Josette</span> <%# Shop.name to implement %>
   </div>
 
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))">
+  <div class="card-category">
     <%=image_tag('shoptest3.jpg')%> <%# Shop.photo to implement %>
     <span class="shop-title">Traiteur Nice Garibaldi</span> <%# Shop.name to implement %>
   </div>
