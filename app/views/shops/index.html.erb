@@ -8,7 +8,7 @@
   <div class="container">
     <div class="card-product">
       <div class="card-product-top">
-        <div class="card-product-top-image" style="background-image: url(<%=cl_image_path(shop.photo.key)%>)">
+        <div class="card-product-top-image" style="background-image: url('<%=cloudinary_url(shop.photo)%>')">
             <i class="fas fa-heart position-icon"></i>
         </div>
         <div class="card-product-info">
@@ -27,7 +27,7 @@
 
       <img class="card-product-middle" src="https://source.unsplash.com/random" alt="">
     </div>
-   </div> 
-  <% end %>
+  </div> 
+<% end %>
 
 
