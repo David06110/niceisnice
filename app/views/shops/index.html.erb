@@ -1,14 +1,19 @@
 <h2>Les commerces du réseau <strong> Nice is Nice!</strong></h2>
 <p>Découvrez où vous pouvez récolter du cashback</p>
-
+<%# '<%=cloudinary_url(shop.photos[1].path)%>' %>
 
 
 <% @shops.each do |shop| %>
+  <% n = 0 %>
+  <% shop.photos.each do |photo|
+    n += 1
+    @shop_img = cl_image_tag photo.key%>
+  <% end %>
 
   <div class="container">
     <div class="card-product">
       <div class="card-product-top">
-        <div class="card-product-top-image" style="background-image: url('<%=cloudinary_url(shop.photo.path)%>')">
+        <div class="card-product-top-image" style="background-image: url('<%= @shop_img %>')">  
             
             <i class="fas fa-heart position-icon"></i>
         </div>
@@ -26,7 +31,7 @@
         </div>
       </div>
 
-      <img class="card-product-middle" src="https://source.unsplash.com/random" alt="">
+      <%# <img class="card-product-middle" src=`<%= shop_img %>` alt=""> %>
     </div>
   </div> 
 <% end %>

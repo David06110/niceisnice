@@ -1,5 +1,5 @@
 class Shop < ApplicationRecord
-  has_one_attached :photo
+  has_many_attached :photos
   
   has_many :cashbacks
   validates :name, presence: true
