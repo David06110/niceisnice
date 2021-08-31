@@ -1,7 +1,14 @@
+
 <h3>Les commerces du réseau <strong> Nice is Nice!</strong></h3>
 <p><strong>Découvrez où vous pouvez récolter du cashback</strong></p>
 
+
 <% @shops.each do |shop| %>
+  <% n = 0 %>
+  <% shop.photos.each do |photo|
+    n += 1
+    @shop_img = cl_image_tag photo.key%>
+  <% end %>
 
   <div class="container">
     <div class="card-product">
@@ -24,7 +31,7 @@
         </div>
       </div>
 
-      <img class="card-product-middle" src="https://source.unsplash.com/random" alt="">
+      <%# <img class="card-product-middle" src=`<%= shop_img %>` alt=""> %>
     </div>
   </div> 
 <% end %>
