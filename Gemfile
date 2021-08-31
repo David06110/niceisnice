@@ -33,6 +33,8 @@ gem 'cloudinary', '~> 1.16.0'
 gem 'devise'
 gem 'font-awesome-sass', '~> 5.15.1'
 gem 'simple_form'
+gem 'stimulus-rails'
+
 
 group :development, :test do
   gem 'pry-byebug'
