@@ -1,30 +1,42 @@
 <div class="navbar-links">
-<%# Event list %>
+  <div class="nav-container">
+  <%# Home %>
+    <div class="nav-item">
+      <%= link_to root_path, class: "nav-link" do%>
+      <%= icon("fas", "home") %>
+      <%end%>
+    </div>
+
+  <%# Event list %>
+    <div class="nav-item">
+      <%= link_to root_path, class: "nav-link" do%>
+      <%= icon("fas", "calendar-alt") %>
+      <%end%>
+    </div>
+  </div>
+
+  <%# Scan a ticket %>
   <div class="nav-item">
-    <%= link_to root_path, class: "nav-link" do%>
-    <%= icon("fas", "calendar-alt") %>
-    <%end%>
-  </div>
+      <%= link_to new_cashback_path, class: "nav-link" do%> 
+      <%= icon("fas", "plus-circle") %>
+      <%end%>
+    </div>
 
-<%# Shop list %>
-<div class="nav-item">
-    <%= link_to shops_path, class: "nav-link" do%>
-    <%= icon("fas", "store") %>
-    <%end%>
-  </div>
-
-<%# Scan a ticket %>
-<div class="nav-item">
-    <%= link_to new_cashback_path, class: "nav-link" do%> 
-    <%= icon("fas", "plus-circle") %>
-    <%end%>
-  </div>
-
-<%# Dashboard %>
+  <div class="nav-container">
+  <%# Shop list %>
   <div class="nav-item">
-    <%= link_to dashboard_path, class: "nav-link" do%>
-      <%= icon("fas", "euro-sign") %>
-    <%end%>
+      <%= link_to root_path, class: "nav-link" do%>
+      <%= icon("fas", "store") %>
+      <%end%>
+    </div>
+
+  <%# Dashboard %>
+    <div class="nav-item">
+      <%= link_to dashboard_path, class: "nav-link" do%>
+        <%= icon("fas", "euro-sign") %>
+      <%end%>
+    </div>
+
   </div>
 </div>
 
