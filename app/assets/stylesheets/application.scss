@@ -12,6 +12,7 @@
 @import "components/index";
 @import "dashboards/index";
 @import "devise/index";
+@import "coupons/index";
 
 body {
   background: linear-gradient(to bottom, #5090F0, #78A8F3, #9DC0F5, #C2D7F5, #E8EEF6);
@@ -80,7 +81,7 @@ h1 {
 
 .nav-item .fa-plus-circle {
   font-size: 30px;
-  color:#214A7B; 
+  color:#214A7B;
 }
 .nav-item .fa-store {
    font-size: 30px;
@@ -90,5 +91,5 @@ h1 {
  }
 .nav-item .fa-euro-sign {
   font-size: 30px;
-  color:#214A7B; 
+  color:#214A7B;
  }
