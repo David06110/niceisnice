@@ -13,6 +13,7 @@
 @import "dashboards/index";
 @import "devise/index";
 @import "coupons/index";
+@import "cashbacks/index";
 
 body {
   background: linear-gradient(to bottom, #5090F0, #78A8F3, #9DC0F5, #C2D7F5, #E8EEF6);
@@ -52,6 +53,16 @@ h1 {
   text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
 
+h3 {
+  margin: 0;
+  padding: 7px;
+  font-weight: bold;
+  color: #09203be0;
+  text-align: center;
+  font-size: 17px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);margin: 0;
+}
+
 p {
   margin: 0;
   padding: 12px;
@@ -80,7 +91,7 @@ p {
   background-color: #214A7B;
   color: #ffffff;
   border-radius: 15px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-align: center;
   object-position: center;
   transition: background 0.3s ease;
