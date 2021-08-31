@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   get 'coupons/show'
 
-  resources :shops , only: %i[index]
+  resources :shops , only: %i[index show]
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root to: 'dashboards#home'

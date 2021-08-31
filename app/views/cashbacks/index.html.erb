@@ -1,9 +1,18 @@
-<h1>Mes Cashbacks</h1>
-<p>Voici la liste de vos cashbacks</p>
+<%@disable_logo=true %>
 
-<ul>
-  <% @cashbacks.each do |cashback| %>
-    <li><%= cashback.created_at %>
-     <%= cashback.shop.name %> <%= cashback.shop.address %></li>
-  <% end %>
-</ul>
+<div class="dashboard_resume">
+  <h2>Mes Cashbacks</h2>
+  <h3>Historique de vos cashbacks</h3>
+
+  <div class="cashback-container">
+        <% @cashbacks.each do |cashback| %>
+          <div class="cashback-each">
+            <%= cashback.created_at.strftime("%d/%m/%Y") %>
+            <%= link_to cashback.shop.name, shops_path(cashback.shop) %>
+            <%= cashback.amount %> €
+          </div>
+        <% end %>
+  </div>
+
+  <a class="btn btn-solid" href= "/coupons">Utiliser mon cashback/générer un coupon</a>
+</div>
