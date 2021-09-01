@@ -5,3 +5,31 @@
 .shopsaround .btn{
   box-shadow: 5px 3px 3px $shdbutton;
 }
+
+.btn-gradient {
+  background-color: #214A7B;
+  color: #ffffff;
+  padding: 25px 20px;
+  border-radius: 15px;
+  text-align: center;
+  object-position: center;
+  transition: background 0.3s ease;
+  border: 1px solid #214A7B;
+}
+
+.btn-gradient:hover {
+  background: #214A7B;
+  color: white;
+}
+
+.btn-solid {
+  background-color: #214A7B;
+  color: #ffffff;
+  border-radius: 13px;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 5px;
+  object-position: center;
+  transition: background 0.3s ease;
+  border: 1px solid #214A7B;
+}
