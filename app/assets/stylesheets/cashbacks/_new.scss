@@ -1,4 +1,15 @@
-.scan-btn{
+erreur{
+  color: rgb(196, 32, 32);
+  position: absolute;
+  // transform: translate(-50%,-50%);
+  // left: 50%;
+  justify-self: center;
+  top: 25%;
+  font-size:25px;
+  font-weight: bold;
+}
+
+.scan-ticket{
   // position: absolute;
   // display: flex !important;
   // justify-content: center !important;
@@ -10,3 +21,4 @@
   font-size:25px;
   font-weight: bold;
 }
+

@@ -1,17 +1,8 @@
-<div class = "scan-btn">
-  <%= simple_form_for @new_cashback, html: {data: {controller: "ticket-submit"}} do |f|%>
-    <%= f.label :ticket, "Scanner un ticket", class: "btn btn-primary" %>
-    <%= f.file_field :ticket, accept: "image/*", capture: "environment", data: {action: "change->ticket-submit#submit"}, class: "d-none" %>
-  <% end %>
-</div>
-
-<%# ici le bouton sera "Scanner le ticket" %>
-
-
- <%= simple_form_for @new_cashback, html: {data: {controller: "ticket-submit"}} do |f|%>
-    <%= f.label :ticket do %>
-    <div>untrucalacon</div>
+  <h2 class="erreur">Une erreur est survenu</h2>
+  <div class = "scan-ticket">
+    <%= simple_form_for @new_cashback, html: {data: {controller: "ticket-submit"}} do |f|%>
+      <%= f.label :ticket, "Réessayer", class: "btn btn-gradient" %>
+      <%= f.file_field :ticket, accept: "image/*", capture: "environment", data: {action: "change->ticket-submit#submit"}, class: "d-none" %>
     <% end %>
-
-    <%= f.file_field :ticket, accept: "image/*", capture: "environment", data: {action: "change->ticket-submit#submit"}, class: "d-none" %>
-  <% end %>
+  </div>
+ 
