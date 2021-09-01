@@ -7,7 +7,7 @@
     <div class="card-product">
       <div class="card-product-top">
         <div class="card-product-top-image">
-          <%= cl_image_tag(@shop.photos.second.key, :size => '180x150', :crop => :fill, :radius => 20) %>           
+          <%# cl_image_tag(@shop.photos.second.key, :size => '150x150', :crop => :fill) %>           
           <i class="fas fa-heart position-icon"></i>
         </div>
         <div class="card-product-info" style="text-align:center;">
@@ -26,7 +26,7 @@
       </div>
 
       <div class="card-product-bottom">
-        <%= cl_image_tag(@shop.photos.first.key,:size => '330x80', :crop => :fill, :radius => 20) %>        
+        <%= cl_image_tag(@shop.photos.first.key, :size => '290x100',:crop => :fill) %>        
       </div>
     </div>
   </div> 
