@@ -1,11 +1,8 @@
 class DashboardsController < ApplicationController
   # skip_before_action :authenticate_user!, only: :home
   def show
-    @sum_cashback = Cashback
-      .where(user: current_user)
-      .pluck(:amount)
-      .sum    
-  
+    @sum_cashback = current_user.current_cashback
+
     @cashback = Cashback
       .where(user: current_user)
       .last
@@ -14,5 +11,5 @@ class DashboardsController < ApplicationController
 
   def home
   end
-  
+
 end

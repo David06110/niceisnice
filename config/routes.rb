@@ -9,5 +9,5 @@ Rails.application.routes.draw do
   resources :cashbacks, only: %i[new create index]
   resource :dashboard, only: %i[show home]
   devise_for :users
-  resource :coupons, only: %i[show]
+  resource :coupons, only: %i[show new create]
 end
