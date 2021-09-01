@@ -2,20 +2,14 @@
 <h3>Les commerces du réseau <strong> Nice is Nice!</strong></h3>
 <p><strong>Découvrez où vous pouvez récolter du cashback</strong></p>
 
-<%# cloudinary::utils.cloudinary_url...... %>
 <% @shops.each do |shop| %>
-  <% n = 0 %>
-  <% shop.photos.each do |photo|
-    n += 1
-    @shop_img = cl_image_tag photo.key%>
-  <% end %>
-
+  <% @shop = shop%>
   <div class="container">
     <div class="card-product">
       <div class="card-product-top">
         <div class="card-product-top-image">
-            
-            <i class="fas fa-heart position-icon"></i>
+          <%= cl_image_tag(@shop.photos.second.key, :size => '180x150', :crop => :fill, :radius => 20) %>           
+          <i class="fas fa-heart position-icon"></i>
         </div>
         <div class="card-product-info">
           <div>
@@ -27,13 +21,12 @@
           </div>
           <p><strong> <%= shop.name %> </strong></p>
           <p><%=shop.address%></p>
-          <span data-controller="hello" data-action="click->hello#openNativeMap" class="btn-solid"> Y aller </span>
+          <span data-controller="hello" data-action="click->hello#openNativeMap" class="btn-solid yaller"> Y aller </span>
         </div>
       </div>
-
-      <%# <img class="card-product-middle" src=`<%= shop_img %>` alt=""> %>
+      <div class="card-product-bottom">
+        <%= cl_image_tag(@shop.photos.first.key,:size => '330x80', :crop => :fill, :radius => 20) %>        
+      </div>
     </div>
   </div> 
 <% end %>
-
-
