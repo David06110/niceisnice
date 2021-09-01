@@ -1,6 +1,6 @@
 class CouponsController < ApplicationController
   def show
-    @coupons = current_user.coupons
+    @coupons = current_user.coupons.order(created_at: :desc)
   end
 
   def new
@@ -9,13 +9,16 @@ class CouponsController < ApplicationController
 
   def create
     @new_coupon = Coupon.new(coupon_params)
-    flash.alert = "Vous n'avez pas assez de cashback!"
-    render "coupons/new" and return if current_user.current_cashback < @new_coupon.price
+    if current_user.current_cashback < @new_coupon.price
+      flash.alert = "Vous n'avez pas assez de cashback!"
+      render "coupons/new" 
+      return
+    end
 
     @new_coupon.user = current_user
 
     code = Digest::MD5.hexdigest("#{current_user.id}x#{current_user.coupons.count + 1}")
-    @new_coupon.code = "NINCOUPON-#{code}"
+    @new_coupon.code = "NINCOUPON-#{code}"[0..15].upcase
     @new_coupon.save
     redirect_to coupons_path
   end
