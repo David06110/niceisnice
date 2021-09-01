@@ -27,7 +27,7 @@
           </div>
           <p><strong> <%= shop.name %> </strong></p>
           <p><%=shop.address%></p>
-          <span data-controller="hello" data-action="click->hello#openNativeMap" class="btn-solid"> Y aller </span>
+          <span data-controller="visite-map" data-action="click->visite-map#openNativeMap" data-visite-map-longitude-value="<%= shop.longitude %>" data-visite-map-latitude-value="<%= shop.latitude %>" class="btn-solid"> Y aller </span>
         </div>
       </div>
 
@@ -35,5 +35,3 @@
     </div>
   </div> 
 <% end %>
-
-
