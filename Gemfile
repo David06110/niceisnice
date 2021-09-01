@@ -35,6 +35,7 @@ gem 'font-awesome-sass', '~> 5.15.1'
 gem 'simple_form'
 gem 'stimulus-rails'
 
+gem 'rails-i18n'
 
 group :development, :test do
   gem 'pry-byebug'
