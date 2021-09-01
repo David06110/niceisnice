@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(version: 2021_09_01_100731) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.decimal "amount", precision: 5, scale: 2
+    t.decimal "ticket"
     t.float "ticket_amount"
     t.index ["shop_id"], name: "index_cashbacks_on_shop_id"
     t.index ["user_id"], name: "index_cashbacks_on_user_id"
@@ -66,6 +67,7 @@ ActiveRecord::Schema.define(version: 2021_09_01_100731) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "raw_name"
+    t.string "url"
   end
 
   create_table "users", force: :cascade do |t|

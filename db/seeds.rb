@@ -1,5 +1,6 @@
 
 p "Clean de la DBz"
+Coupon.destroy_all
 Cashback.destroy_all
 Shop.destroy_all
 User.destroy_all
