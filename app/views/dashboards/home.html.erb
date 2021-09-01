@@ -12,8 +12,11 @@
     <h1>Nice is Nice! </h1>
     <h2>Le cashback citoyen <strong>qui te fait sortir</strong></h2>
   </div>
-  <div class="scanticket">
-    <a class="btn btn-gradient" href= "/cashbacks/new" >Scanner un ticket</a>
+  <div class = "scanticket">
+    <%= simple_form_for @new_cashback, html: {data: {controller: "ticket-submit"}} do |f|%>
+      <%= f.label :ticket, "Scanner un ticket", class: "btn btn-gradient" %>
+      <%= f.file_field :ticket, accept: "image/*", capture: "environment", data: {action: "change->ticket-submit#submit"}, class: "d-none" %>
+    <% end %>
   </div>
 </div>
 
