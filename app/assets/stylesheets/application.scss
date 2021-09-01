@@ -60,12 +60,11 @@ h2 {
   color: #FF6978;
   text-align: center;
   font-size: 18px;
-  background-color: #21497b80;
-  border-radius: 15px;
+  border-radius: 80px;
   text-align: center;
   object-position: center;
   transition: background 0.3s ease;
-  border: 1px solid #214A7B;
+  border: 3px solid #214A7B;
   width: 85wh;
 }
 
@@ -81,38 +80,18 @@ h3 {
 
 p {
   margin: 0;
-  padding: 12px;
+  padding: 8px;
   color: #09203be0;
   text-align: center;
-  font-size: 13px;
+  font-size: 15px;
 }
 
-.btn-gradient {
-  background-color: #214A7B;
-  color: #ffffff;
-  padding: 25px 20px;
-  border-radius: 15px;
+
+a {
+  margin: 0;
+  color: #09203be0;
   text-align: center;
-  object-position: center;
-  transition: background 0.3s ease;
-  border: 1px solid #214A7B;
-}
-
-.btn-gradient:hover {
-  background: #214A7B;
-  color: white;
-}
-
-.btn-solid {
-  background-color: #214A7B;
-  color: #ffffff;
-  border-radius: 15px;
-  font-size: 0.9rem;
-  text-align: center;
-  position: center;
-  object-position: center;
-  transition: background 0.3s ease;
-  border: 1px solid #214A7B;
+  font-size: 15px;
 }
 
 .nav-item .fa-plus-circle {
