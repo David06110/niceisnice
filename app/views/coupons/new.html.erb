@@ -1,0 +1,6 @@
+<h1>Utiliser mon cashback & génération du coupon</h1>
+
+<%=simple_form_for @new_coupon do |form|%>
+  <%= form.input :price, label: "Montant du coupon"%>
+  <%= form.submit "Générer"%>
+<% end%>

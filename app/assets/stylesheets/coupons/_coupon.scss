@@ -1,5 +1,5 @@
 .explications {
-  color:#214A7B;
+  color:#FF6978;
   text-align: center;
   width: 70%;
   margin: 25px auto;
@@ -14,18 +14,18 @@
   border-radius: 8px;
   margin: 25px auto;
   box-shadow: 2px 2px 4px #214A7B;
-  font-family: "Gill Sans", sans-serif;
+  font-family: "Gill Sans", sans-serif #FF6978;
   font-size: 1.2em;
   margin-top: 2px;
 }
 
-.prix {
-  color:#214A7B;
+.price {
   text-align: center;
-  width: 70%;
+  width: 80%;
   margin: 25px auto;
   font-family: "Gill Sans", sans-serif;
-  font-size: 1.2em;
+  font : oblique 14px Arial, Helvetica, sans-serif;
+  font-weight: bolder;
 }
 
 .date_time {
@@ -37,6 +37,29 @@
   font-size: 0.5em;
 }
 
-p{
-  margin-top: 1rem;
+h3 {
+  color: #FF6978;
+  text-align: center;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+h5 {
+  font-size: 40px;
+  font-weight: bold;
+  color:#FF6978;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+a {
+  font-size: 12px;
+  color:#214A7B;
 }

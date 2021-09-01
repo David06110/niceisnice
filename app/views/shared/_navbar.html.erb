@@ -15,12 +15,17 @@
     </div>
   </div>
 
-  <%# Scan a ticket %>
-  <div class="nav-item">
-      <%= link_to new_cashback_path, class: "nav-link" do%> 
-      <%= icon("fas", "plus-circle") %>
-      <%end%>
-  </div>
+  <%= simple_form_for @new_cashback, html: {data: {controller: "ticket-submit"}} do |f|%>
+    <%= f.label :ticket do %>
+      <%# Scan a ticket %>
+      <div class="nav-item">
+          <%# <%= link_to new_cashback_path, class: "nav-link" do%>
+          <%= icon("fas", "plus-circle") %>
+          <%# <%end%>
+      </div>
+    <% end %>
+    <%= f.file_field :ticket, accept: "image/*", capture: "environment", data: {action: "change->ticket-submit#submit"}, class: "d-none" %>
+  <% end %>
 
   <div class="nav-container">
     <%# Shop list %>
