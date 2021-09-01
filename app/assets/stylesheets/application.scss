@@ -44,7 +44,6 @@ main {
 }
 
 h1 {
-  margin: 0;
   padding: 17px;
   font-weight: bold;
   color: #09203be0;
@@ -53,13 +52,29 @@ h1 {
   text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
 
+h2 {
+  margin: 5px;
+  padding: 25px;
+  font-weight: bold;
+  color: #FF6978;
+  text-align: center;
+  font-size: 18px;
+  background-color: #21497b80;
+  border-radius: 15px;
+  text-align: center;
+  object-position: center;
+  transition: background 0.3s ease;
+  border: 1px solid #214A7B;
+  width: 85wh;
+}
+
 h3 {
-  margin: 0;
-  padding: 7px;
+  margin: 5px;
+  padding: 35px;
   font-weight: bold;
   color: #09203be0;
   text-align: center;
-  font-size: 17px;
+  font-size: 15px;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.2);margin: 0;
 }
 
@@ -93,6 +108,7 @@ p {
   border-radius: 15px;
   font-size: 0.9rem;
   text-align: center;
+  position: center;
   object-position: center;
   transition: background 0.3s ease;
   border: 1px solid #214A7B;
@@ -104,9 +120,11 @@ p {
 }
 .nav-item .fa-store {
    font-size: 35px;
+   color:#214A7B;
 }
  .nav-item .fa-calendar-alt {
    font-size: 35px;
+   color:#214A7B;
  }
 .nav-item .fa-euro-sign {
   font-size: 35px;
@@ -115,4 +133,4 @@ p {
  .nav-item .fa-home {
   font-size: 35px;
   color:#214A7B;
- }
+
