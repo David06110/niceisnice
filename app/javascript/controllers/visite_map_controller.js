@@ -1,6 +1,10 @@
 import { Controller } from "stimulus"
 
 export default class extends Controller {
+  static values = {
+    longitude: Number,
+    latitude: Number
+  }
   connect() {
   }
   
@@ -9,11 +13,10 @@ export default class extends Controller {
       ((navigator.platform.indexOf("iPhone") != -1) || 
       (navigator.platform.indexOf("iPad") != -1) || 
       (navigator.platform.indexOf("iPod") != -1)) {
-      window.open("maps://maps.google.com/maps?daddr=43.70321627151884,7.260438382784434,&amp;ll=");
+      window.open(`maps://maps.google.com/maps?daddr=${this.longitudeValue},${this.latitudeValue},&amp;ll=`);
     }
     else { /* else use Google */
-      window.open("https://maps.google.com/maps?daddr=43.70321627151884,7.260438382784434,&amp;ll=");
+      window.open(`https://maps.google.com/maps?daddr=${this.longitudeValue},${this.latitudeValue},&amp;ll=`);
     }
   }
 }
-
