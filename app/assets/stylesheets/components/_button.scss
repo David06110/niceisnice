@@ -25,11 +25,25 @@
 .btn-solid {
   background-color: #214A7B;
   color: #ffffff;
+  margin-bottom: 5px;
   border-radius: 13px;
   font-size: 1.2rem;
   text-align: center;
-  padding: 5px;
+  padding: 15px;
   object-position: center;
   transition: background 0.3s ease;
   border: 1px solid #214A7B;
+}
+
+.btn-fix {
+  background-color: #FF6978;
+  color: #214A7B;
+  border-radius: 13px;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 15px;
+  object-position: center;
+  transition: background 0.3s ease;
+  border: 1px solid #FF6978;
 }
