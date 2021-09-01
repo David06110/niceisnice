@@ -1,6 +1,6 @@
 .cashback_immediat {
   color:#214A7B;
-  width: 70%;
+  width: 80%;
   border-radius: 30px;
   border: 1px solid #214A7B;
   border-radius: 30px;
@@ -19,7 +19,7 @@
 .cashback_total {
   color:#214A7B;
   text-align: center;
-  width: 70%;
+  width: 80%;
   border-radius: 30px;
   border: 1px solid #214A7B;
   border-radius: 30px;
@@ -31,7 +31,8 @@
   grid-template-columns: 25px auto;
   align-items: center;
   gap: 0.25rem 1rem;
-  margin: 1.5rem;
+  margin: 1.3rem;
+  object-position: center;
 
   i {
     justify-self: end;

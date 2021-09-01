@@ -1,16 +1,16 @@
 <div class="background txt-white-center">
 
-<div class="container_informations">
-  <div class="cashback_immediat"><h1>Dernier Cashback immediat</h1>
-    <div class="now_amount"></div>
-      <div id="amount" class="text-center"><%= @cashback.amount.presence || 0 %> €</div>
-      <div class="text-right mr-2 mb-4">sur un montant de <%= @cashback.ticket_amount %> €</div>
-      <div class="cashback_details">
-          <i class="fas fa-store"></i><%= link_to(@cashback.shop.name, shop_path(@cashback.shop)) %>
-          <i class="fas fa-map-marker"></i><span><%= @cashback.shop.address %></span>
-          <i class="fas fa-clock"></i><span><%= l(@cashback.created_at, format: "Ajouté le %d %b %Y à %Hh%M", locale: :fr) %></span>
+  <div class="container_informations">
+    <div class="cashback_immediat"><h1>Dernier Cashback immediat</h1>
+      <div class="now_amount"></div>
+        <div id="amount" class="text-center"><%= @cashback.amount.presence || 0 %> €</div>
+        <div class="text-right mr-2 mb-4">sur un montant de <%= @cashback.ticket_amount %> €</div>
+        <div class="cashback_details">
+            <i class="fas fa-store"></i><%= link_to(@cashback.shop.name, shop_path(@cashback.shop)) %>
+            <i class="fas fa-map-marker"></i><span><%= @cashback.shop.address %></span>
+            <i class="fas fa-clock"></i><span><%= l(@cashback.created_at, format: "Ajouté le %d %b %Y à %Hh%M", locale: :fr) %></span>
+        </div>
       </div>
-    </div>
   </div>
 
   <div class="cashback_total"><h1>Cashback total</h1>
