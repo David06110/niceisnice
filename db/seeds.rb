@@ -41,9 +41,9 @@ file2 = URI.open('https://ville-data.com/magasin/image/supermarket.jpg')
   @shop5.photos.attach(io: file2, filename: 'photo2.jpg', content_type: 'image/png')
   @shop5.save!
   p @shop5
-  file1 = URI.open('https://res.cloudinary.com/dcmbxjvgh/image/asset/v1630416201/boucherie1-fac01ddc81f088dfa052ca4c8f776236.jpg')
-  file2 = URI.open('https://res.cloudinary.com/dcmbxjvgh/image/asset/v1630416201/boucherie2-80d4ff683d9db8ce1dcb66bd32a200dd.jpg')
- @shop6 = Shop.new(name: "Boucherie de la gare", raw_name: "Boucherie de la gare", siret: 2147483647, address: "45 Avenue Thiers, 06000 Nice", longitude: 43.7014103, latitude: 7.2563984)
+  file2 = URI.open('https://res.cloudinary.com/dcmbxjvgh/image/asset/v1630416201/boucherie1-fac01ddc81f088dfa052ca4c8f776236.jpg')
+  file1 = URI.open('https://res.cloudinary.com/dcmbxjvgh/image/asset/v1630416201/boucherie2-80d4ff683d9db8ce1dcb66bd32a200dd.jpg')
+ @shop6 = Shop.new(name: "Boucherie de la gare", siret: 2147483647, address: "45 Avenue Thiers, 06000 Nice", longitude: 43.7014103, latitude: 7.2563984)
   @shop6.photos.attach(io: file1, filename: 'photo1.jpg', content_type: 'image/jpg')
   @shop6.photos.attach(io: file2, filename: 'photo2.jpg', content_type: 'image/jpg')
   @shop6.save!
