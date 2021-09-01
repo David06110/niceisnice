@@ -34,3 +34,16 @@
   border: 2px solid #214A7B;
   box-shadow: 1px 1px 1px $shdbutton;
 }
+
+.btn-fix {
+  background-color: #FF6978;
+  color: #214A7B;
+  border-radius: 13px;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 15px;
+  object-position: center;
+  transition: background 0.3s ease;
+  border: 1px solid #FF6978;
+}
