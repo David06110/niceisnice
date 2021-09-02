@@ -27,6 +27,8 @@ body {
 
 main {
   overflow-y: auto;
+  text-align: center;
+  position: relative;
 }
 
 .background {
@@ -59,7 +61,7 @@ h2 {
   font-weight: bold;
   color: #FF6978;
   text-align: center;
-  font-size: 18px;
+  font-size: 28px;
   border-radius: 80px;
   text-align: center;
   object-position: center;

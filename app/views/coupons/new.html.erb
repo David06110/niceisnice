@@ -1,10 +1,14 @@
 <h2>Utiliser mon cashback</h2>
 <%#  solde disponible %>
-
-
-<div class="form_coupon">
-  <%=simple_form_for @new_coupon do |form|%>
-    <%= form.input :price, label: "Entrez le montant", class: "label"%>
-    <%= form.submit "Générer", class: "btn btn-solid myrendre" %>
-  <% end%>
+<div class="gencash">
+  <div class="soldecashback">
+    <h4> Solde actuel:   </h4><h4 id="euro"> <%= @sum_cashback %> € </h4> 
+  </div>
+  
+  <div class="form_coupon">
+    <%=simple_form_for @new_coupon do |form|%>
+      <%= form.input :price, label: "Entrez le montant", class: "label"%>
+      <%= form.submit "Générer", class: "btn btn-solid myrendre" %>
+    <% end%>
+  </div>
 </div>
