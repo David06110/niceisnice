@@ -8,7 +8,7 @@
 
 .btn-gradient {
   background-color: #214A7B;
-  color: #ffffff;
+  color: #fbf8f8;
   padding: 25px 20px;
   border-radius: 15px;
   text-align: center;
@@ -24,11 +24,12 @@
 
 .myrendre {
   background-color: #214A7B;
-  color: #ffffff;
+  color: white;
   border-radius: 8px;
   font-size: 1rem;
   text-align: center;
   padding: 4px;
+  margin: 5px;
   object-position: center;
   transition: background 0.3s ease;
   border: 2px solid #214A7B;
@@ -39,7 +40,7 @@
   background-color: #FF6978;
   color: #214A7B;
   border-radius: 13px;
-  margin-bottom: 5px;
+  margin: 5px;
   font-size: 1.2rem;
   text-align: center;
   padding: 15px;
@@ -47,3 +48,16 @@
   transition: background 0.3s ease;
   border: 1px solid #FF6978;
 }
+
+.btn-events {
+  background-color: #214A7B;
+  color:#ffffff; 
+  padding: 25px 20px;
+  border-radius: 15px;
+  margin: 5px;
+  text-align: center;
+  object-position: center;
+  border: 1px solid #214A7B;
+}
+
+

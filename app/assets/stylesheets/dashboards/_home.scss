@@ -9,9 +9,9 @@
 .banner h1 {
   margin: 0;
   padding: 5px;
-  color: #FF6978;
+  color: #f3bc23cc;
   text-align: center;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 1px #214a7b;
   font-size: 45px;
   font-weight: bold;
 }
@@ -28,7 +28,7 @@
 .banner p {
   font-size: 15px;
   padding: 5px;
-  color: #fbfcfde7;
+  color: #214a7b;
   text-align: center;
   justify-content: center;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
@@ -48,3 +48,4 @@
   transition: background 0.3s ease;
   border: 1px solid #214A7B;
 }
+

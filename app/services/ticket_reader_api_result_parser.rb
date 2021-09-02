@@ -11,7 +11,7 @@ class TicketReaderApiResultParser
     @data = JSON.parse(raw_data, symbolize_names: true)
     @result = { status: :success }
     # ecriture de la reponse en json
-    File.write("response_#{Time.now}.json", @data, mode: "a")
+    # File.write("response_#{Time.now}.json", @data, mode: "a")
   end
 
   def call

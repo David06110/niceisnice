@@ -14,7 +14,7 @@ class CashbacksController < ApplicationController
     result = TicketReaderService.new(@file).call
 
     if result[:status] == :success
-      @new_cashback.shop = Shop.find_by(siret: result[:siret]) || Shop.find_by(raw_name: result[:name]) || Shop.find_by(address: result[:address])
+      @new_cashback.shop = Shop.find_by(siret: result[:siret]) || Shop.find_by(raw_name: result[:name], address: result[:address])
       @new_cashback.amount = result[:cashback_amount]
       @new_cashback.ticket_amount = result[:total_amount]
 

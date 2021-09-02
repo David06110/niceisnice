@@ -1,13 +1,16 @@
-<h1>Utiliser mon cashback & génération du coupon</h1>
 <div class="coupon-index">
-  <div class="explications"><p>J'utilise mon cashback pour l'achat d'un évènement culturel proposé par la ville de NICE</p></div>
-
-  <div class="generate_coupon"><h3>Mes coupons evenement culturel</h3></div>
+<h2>Comment profiter de mon cashback? </h2>
+  <div class="explications">
+    <p>Le cashback cumulé grâce à l'application Nice is Nice permet de générer des coupons de réductions.</p> 
+    <p>Ces coupons sont utilisables pour l'achat de billets d'entrées à des évènements, expositions ou manifestations organisés par la ville de Nice.</p> 
+    <a class="btn btn-events" href= "https://www.nicetourisme.com/agenda">Je découvre les évènements de la ville </a>
+  </div>
+  
+  <div class="generate_coupon"><h1>Mes coupons de réduction</h1></div>
     <% @coupons.each do |coupon|%>
     <div class="code"><h4>Code : <%= coupon.code%></h4>
       <div class="price"><h5><%= coupon.price%>€</h5></div>
-        <div class="date_time"><h6>Le <%= coupon.created_at.strftime('%d/%m/%Y à %H:%M')%></h6></div>
-          <a href= "https://www.google.com/search?q=google&sxsrf=AOaemvJ3I8WunlxuozY4RQWTtpTOTVS2Ew%3A1630421599720&ei=X0IuYYSqK-SZlwTh0Y34BA&oq=google&gs_lcp=Cgdnd3Mtd2l6EAMyBwgjECcQnQIyBAgjECcyBAgjECcyCggAELEDEIMBEEMyBAgAEEMyBAgAEEMyBAgAEEMyCAgAEIAEELEDMgUIABCABDIFCAAQgAQ6BwgAEEcQsAM6BwgAELADEEM6EAguELEDEIMBEMcBENEDEEM6CwgAEIAEELEDEIMBOgcIABCxAxBDSgQIQRgAUImStQFYqJa1AWCYl7UBaAFwAngAgAHlAYgBpgWSAQUwLjQuMZgBAKABAcgBCsABAQ&sclient=gws-wiz&ved=0ahUKEwjE1aPiwdvyAhXkzIUKHeFoA08Q4dUDCA4&uact=5" >La liste des events</a>
+        <div class="date_time"><h6>Le <%= coupon.created_at.strftime('%d/%m/%Y à %H:%M')%></h6></div>  
     </div>
   <% end %>
   </div>
