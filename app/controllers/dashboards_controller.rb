@@ -6,7 +6,6 @@ class DashboardsController < ApplicationController
     @cashback = Cashback
       .where(user: current_user)
       .last
-      # pry
   end
 
   def home
