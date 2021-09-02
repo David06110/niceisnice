@@ -18,7 +18,7 @@ class CashbacksController < ApplicationController
       @new_cashback.amount = result[:cashback_amount]
       @new_cashback.ticket_amount = result[:total_amount]
 
-      redirect_to(root_path, notice: "Merci de choisir un ticket") and return unless @new_cashback.save
+      redirect_to(root_path, notice: "#{result[:name]} n'est pas un magasin affilié !") and return unless @new_cashback.save
 
       redirect_to dashboard_path
     else
