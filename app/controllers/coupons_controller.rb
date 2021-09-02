@@ -5,6 +5,7 @@ class CouponsController < ApplicationController
 
   def new
     @new_coupon = Coupon.new
+    @sum_cashback = current_user.current_cashback
   end
 
   def create

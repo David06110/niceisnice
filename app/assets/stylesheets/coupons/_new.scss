@@ -1,3 +1,11 @@
+.gencash{
+  position: relative;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 25%;
+}
+
+
 .form_coupon{
   text-align: center;
 }
@@ -5,4 +13,21 @@
 .label{
   color:#214A7B;
   text-align: center;
+}
+
+.form_coupon{
+  .myrendre{
+    font-size:larger;
+    padding: 24px;
+  }
+}
+
+.soldecashback{
+  text-align: center;
+  color:$primaire;
+  display: inline-flex;
+  #euro{
+    color:$secondaire;
+    font-weight: bold;
+  }
 }
