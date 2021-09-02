@@ -1,4 +1,5 @@
 .gencash{
+  margin-top: 35px;
   position: relative;
   transform: translate(-50%,-50%);
   left: 50%;
@@ -29,5 +30,6 @@
   #euro{
     color:$secondaire;
     font-weight: bold;
+    margin-left: 4px;
   }
 }
