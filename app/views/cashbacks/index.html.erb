@@ -5,14 +5,18 @@
   <h3>Historique de vos cashbacks</h3>
 
   <div class="cashback-container">
-        <% @cashbacks.each do |cashback| %>
-          <div class="cashback-each">
-            <%= cashback.created_at.strftime("%d/%m/%Y") %>
-            <%= link_to cashback.shop.name, shops_path(cashback.shop) %>
-            <%= cashback.amount %> €
-          </div>
-        <% end %>
+      <% @cashbacks.each do |cashback| %>
+        <div class="cashback-each">
+          <%= cashback.created_at.strftime("%d/%m/%Y") %>
+          <%= link_to cashback.shop.name, shops_path(cashback.shop) %>
+          <%= cashback.amount %> €
+        </div>
+      <% end %>
   </div>
 
-  <a class="btn btn-solid" href= "/coupons">Utiliser mon cashback/générer un coupon</a>
+  <a class="btn btn-fix" href= "/coupons">Générer un coupon de réduction</a>
+
+  <div>
+    <a class="btn btn-gradient" href= "/coupons">Revenir à la liste des partenaires affiliés</a>
+  </div>
 </div>
