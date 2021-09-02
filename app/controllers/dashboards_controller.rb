@@ -10,6 +10,16 @@ class DashboardsController < ApplicationController
   end
 
   def home
+    # @shops = Cashback.shop.all .sort_by!{|item| item[:name]} .sort_by{|shopid| shopid [:shop_id]}
+    # @shops = Shop.all
+    # @top = Hash.new
+    # @top = @shops.each do |shop|
+      
+    #  [shop.id] = shop.cashbacks.pluck(:amount).sum
+    #  binding.pry
+    # end
+    # binding.pry
+    
   end
 
 end
