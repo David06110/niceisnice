@@ -1,7 +1,16 @@
 @import  "new";
 
 .cashback-each {
-  border-radius: 45px;
-  border: 1px solid #214A7B;
-  padding: 11px;
- }
+  color:#214A7B;
+  background-color: rgba(245, 245, 245, 0.692);
+  width: 85%;
+  border-radius: 25px;
+  border: 3px solid #214A7B;
+  box-shadow: 3px 3px 2px 1px $shdbuttonthird;
+  margin: 15px auto;
+  text-align: center;
+
+  div {
+    text-align: left;
+  }
+}
