@@ -1,6 +1,10 @@
-<h1>Utiliser mon cashback & génération du coupon</h1>
+<h2>Utiliser mon cashback</h2>
+<%#  solde disponible %>
 
-<%=simple_form_for @new_coupon do |form|%>
-  <%= form.input :price, label: "Montant du coupon"%>
-  <%= form.submit "Générer"%>
-<% end%>
+
+<div class="form_coupon">
+  <%=simple_form_for @new_coupon do |form|%>
+    <%= form.input :price, label: "Entrez le montant", class: "label"%>
+    <%= form.submit "Générer", class: "btn btn-solid myrendre" %>
+  <% end%>
+</div>
