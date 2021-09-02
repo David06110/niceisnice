@@ -21,7 +21,7 @@
           
           <p><strong><%= link_to shop.name, shop_path(shop)%></strong></p>
           <p><%=shop.address%></p>
-          <span data-controller="hello" data-action="click->hello#openNativeMap" class="btn-solid yaller"> Y aller </span>
+          <span data-controller="visite-map" data-action="click->visite-map#openNativeMap" data-visite-map-longitude-value="<%= shop.longitude %>" data-visite-map-latitude-value="<%= shop.latitude %>" class="btn-solid myrendre"> Y aller </span>
         </div>
       </div>
 

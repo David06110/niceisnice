@@ -6,6 +6,7 @@ export default class extends Controller {
     latitude: Number
   }
   connect() {
+    console.log("coucou")
   }
   
   openNativeMap() {

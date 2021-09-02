@@ -6,6 +6,6 @@
 
 
 
-  <span data-controller="hello" data-action="click->hello#openNativeMap" class="btn-solid myrendre"> Je souhaite m'y rendre </span>
+  <span data-controller="visite-map" data-action="click->visite-map#openNativeMap" data-visite-map-longitude-value="<%= @shop.longitude %>" data-visite-map-latitude-value="<%= @shop.latitude %>" class="btn-solid myrendre"> Afficher l'itinéraire </span>
 
 </div>
