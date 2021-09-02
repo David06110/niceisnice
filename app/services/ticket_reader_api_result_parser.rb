@@ -10,8 +10,8 @@ class TicketReaderApiResultParser
   def initialize(raw_data)
     @data = JSON.parse(raw_data, symbolize_names: true)
     @result = { status: :success }
-    # ajt
-    File.write("response_#{Time.now}.json", @data, mode: "a")
+    # ecriture de la reponse en json
+    # File.write("response_#{Time.now}.json", @data, mode: "a")
   end
 
   def call
@@ -31,7 +31,7 @@ class TicketReaderApiResultParser
     @result[:address] = concatenate_values(:address)
     @result[:siret]   = get_value(:siret)
 
-    @result[:total_amount]    = get_value(:total).to_f
+    @result[:total_amount]    = get_total(:total).to_f
     @result[:cashback_amount] = (@result[:total_amount] * 5 / 100).round(2)
   end
 
@@ -47,6 +47,18 @@ class TicketReaderApiResultParser
     receipt = @data[:document][:inference][:prediction]
 
     receipt[field][:values].first&.fetch(:content)
+  end
+
+  def get_total(field)
+    receipt = @data[:document][:inference][:prediction]
+
+    first = receipt[field][:values].first&.fetch(:content)
+    second = receipt[field][:values].second&.fetch(:content)
+    if second > first
+      return second
+    else
+      return first
+    end
   end
 
   def check_confidence_errors

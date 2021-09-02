@@ -6,10 +6,10 @@ class TicketReaderService
   end
 
   def call
-    return { status: :error, error_message: "No ticket image" } unless @ticket
+    return { status: :error, error_message: "Photo du ticket invalide" } unless @ticket
 
     response = TicketReaderApiSender.new(@ticket).call
-    return { status: :error, error_message: "An error has occured; please try again" } if response == :error
+    return { status: :error, error_message: "Une erreur de lecture est survenue, merci de réessayer" } if response == :error
 
     TicketReaderApiResultParser.new(response).call
   end
