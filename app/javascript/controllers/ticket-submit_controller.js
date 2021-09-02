@@ -6,6 +6,7 @@ export default class extends Controller {
   }
 
   submit(){
+    document.querySelector(".spinner-bg").classList.remove("d-none")
     this.element.submit()
   }
 }
