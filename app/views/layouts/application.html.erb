@@ -44,7 +44,13 @@
       <%= yield %>
     </main>
 
-    <%= render 'shared/navbar' unless  @disable_navbar %>
+    <navbar>
+      <%= render 'shared/navbar' unless  @disable_navbar %>
+      <div class="spinner-bg d-none">
+        <div class="spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        <div>Ticket en cours d'analyse...</div>
+      </div>
+    </navbar>
 
   </body>
 </html>

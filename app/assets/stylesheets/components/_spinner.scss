@@ -1,0 +1,103 @@
+.spinner-bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 100000;
+
+  background: linear-gradient(to bottom, #5090F0, #78A8F3, #9DC0F5, #C2D7F5, #E8EEF6);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 35px;
+  color: #214A7B;
+}
+
+.spinner {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.spinner div {
+  animation: spinner 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.spinner div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgb(255, 105, 120);
+  margin: -4px 0 0 -4px;
+}
+.spinner div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.spinner div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.spinner div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.spinner div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.spinner div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.spinner div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.spinner div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.spinner div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.spinner div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.spinner div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.spinner div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.spinner div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.spinner div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.spinner div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.spinner div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.spinner div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
