@@ -7,6 +7,14 @@
     <h1>Nice is Nice! </h1>
     <h2>Le cashback citoyen <strong>qui te fait sortir</strong></h2>
   </div>
+
+    <div class="container">
+      <h3>Comment l'application fonctionne-t-elle?</h3> 
+      <p>1. Scan ton ticket de caisse après achat au sein des commerces locaux niçois</p> 
+      <p>2. Convertis ton cashback en coupon de réduction</p>
+      <p>3. Utilise ton coupon de réduction lors de l'achat d'un billet d'entrée aux évènements niçois </p>
+    </div>
+
   <div class = "scanticket">
     <%= simple_form_for @new_cashback, html: {data: {controller: "ticket-submit"}} do |f|%>
       <%= f.label :ticket, "Scanner un ticket", class: "btn btn-gradient" %>

@@ -1,8 +1,10 @@
 .cashback_immediat {
   color:#214A7B;
+  background-color: rgba(245, 245, 245, 0.541);
   width: 80%;
   border-radius: 30px;
-  border: 1px solid #214A7B;
+  border: 3px solid #214A7B;
+  box-shadow: 10px 10px 2px 1px $shdbuttonthird;
   border-radius: 30px;
   margin: 25px auto;
 
@@ -20,8 +22,10 @@
   color:#214A7B;
   text-align: center;
   width: 80%;
+  box-shadow: 10px 10px 2px 1px $shdbuttonthird;
+  background-color: rgba(245, 245, 245, 0.541);
   border-radius: 30px;
-  border: 1px solid #214A7B;
+  border: 3px solid #214A7B;
   border-radius: 30px;
   margin: 25px auto;
 }

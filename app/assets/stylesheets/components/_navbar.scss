@@ -1,10 +1,16 @@
 .navbar-links {
   justify-content: space-around;
+  object-position: center;
   background: #FF6978;
   width: 100vw;
   display: flex;
   flex-wrap: nowrap;
   padding: 8px;
+
+  label {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .nav-link {
