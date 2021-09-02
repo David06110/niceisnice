@@ -15,6 +15,6 @@ class TicketReaderApiSender
 
     http = Net::HTTP.new(API_URL.host, API_URL.port)
     http.use_ssl = true
-    http.request(request)
+    http.request(request).body
   end
 end
