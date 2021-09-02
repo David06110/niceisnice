@@ -23,9 +23,10 @@
   </div>
 </div>
 
-<div class="cards">
-    <h3>Top 3 shops<h3>
+<div class="toptrois">
+  <h2>Top 3 commerces</h2>
 </div>
+
     <% @shops.each do |shop| %>
     <% @shop = shop%>
       <div class="container">
@@ -59,7 +60,7 @@
   
 
   <div class="shopsaround">
-    <a class="btn btn-solid myrendre" href= "/shops/show" >Découvrir les commerces du réseau</a>
+    <%= link_to "Découvrir les commerces du réseau", shops_path, class: "btn btn-solid myrendre"%>
   </div>
 
 
