@@ -3,9 +3,5 @@
 <div class="container" style="text-align:center;">
   <h2><%= @shop.name %></h2>
   <p><%= @shop.address %></p>
-
-
-
-  <span data-controller="hello" data-action="click->hello#openNativeMap" class="btn-solid myrendre"> Je souhaite m'y rendre </span>
-
+  <span data-controller="visite-map" data-action="click->visite-map#openNativeMap" data-visite-map-longitude-value="<%= @shop.longitude %>" data-visite-map-latitude-value="<%= @shop.latitude %>" class="btn-solid myrendre"> Y aller </span>
 </div>
