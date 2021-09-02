@@ -9,6 +9,8 @@ class DashboardsController < ApplicationController
   end
 
   def home
+    @shops= [Shop.first , Shop.second , Shop.third]
+    
     # @shops = Cashback.shop.all .sort_by!{|item| item[:name]} .sort_by{|shopid| shopid [:shop_id]}
     # @shops = Shop.all
     # @top = Hash.new

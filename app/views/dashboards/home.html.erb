@@ -10,9 +10,9 @@
 
     <div class="container">
       <h3>Comment l'application fonctionne-t-elle?</h3> 
-      <p>1. Scan ton ticket de caisse après achat au sein des commerces locaux niçois</p> 
+      <p>1. Scan ton ticket de caisse après achat au sein des commerces locaux niçois. Obtiens 5% de cashback à chaque fois.</p> 
       <p>2. Convertis ton cashback en coupon de réduction</p>
-      <p>3. Utilise ton coupon de réduction lors de l'achat d'un billet d'entrée aux évènements niçois </p>
+      <p>3. Utilise ton coupon de réduction lors de l'achat d'un billet d'entrée aux évènements culturels niçois </p>
     </div>
 
   <div class = "scanticket">
@@ -25,7 +25,36 @@
 
 <div class="cards">
     <h3>Top 3 shops<h3>
+    <% @shops.each do |shop| %>
+    <% @shop = shop%>
+      <div class="container">
+        <div class="card-product">
+          <div class="card-product-top">
+            <div class="card-product-top-image">
+              <%# cl_image_tag(@shop.photos.second.key, :size => '150x150', :crop => :fill) %>           
+              <i class="fas fa-heart position-icon"></i>
+            </div>
+            <div class="card-product-info" style="text-align:center;">
+              <div>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              
+              <p><strong><%= link_to shop.name, shop_path(shop)%></strong></p>
+              <p><%=shop.address%></p>
+              <span data-controller="visite-map" data-action="click->visite-map#openNativeMap" data-visite-map-longitude-value="<%= shop.longitude %>" data-visite-map-latitude-value="<%= shop.latitude %>" class="btn-solid myrendre"> Y aller </span>
+            </div>
+          </div>
 
+          <div class="card-product-bottom">
+            <%= cl_image_tag(@shop.photos.first.key, :size => '290x100',:crop => :fill) %>        
+          </div>
+        </div>
+      </div> 
+    <% end %>
   
 
   <div class="shopsaround">
