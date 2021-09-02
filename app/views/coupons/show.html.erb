@@ -6,12 +6,23 @@
     <a class="btn btn-events" href= "https://www.nicetourisme.com/agenda">Je découvre les évènements de la ville </a>
   </div>
   
-  <div class="generate_coupon"><h1>Mes coupons de réduction générés</h1></div>
+  <div class="generate_coupon">
+    <h1>Mes coupons de réduction générés</h1>
+  </div>
+  <% if @coupons.present? %>
     <% @coupons.each do |coupon|%>
-    <div class="code"><h4>Code : <%= coupon.code%></h4>
-      <div class="price"><h5><%= coupon.price%>€</h5></div>
-        <div class="date_time"><h6>Le <%= coupon.created_at.strftime('%d/%m/%Y à %H:%M')%></h6></div>  
-    </div>
+      <div class="code">
+        <h4>Code : <%= coupon.code%></h4>
+        <div class="price"><h5>
+          <%= coupon.price%>€</h5>
+        </div>
+        <div class="date_time">
+          <h6>Le <%= coupon.created_at.strftime('%d/%m/%Y à %H:%M')%></h6>
+        </div>  
+      </div>
+    <% end %>
+  <%else%>  
+    <div class="code"><h4>Vous n'avez pas de coupons</h4></div>
   <% end %>
   </div>
 </div>
