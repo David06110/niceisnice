@@ -54,8 +54,12 @@ class TicketReaderApiResultParser
 
     first = receipt[field][:values].first&.fetch(:content)
     second = receipt[field][:values].second&.fetch(:content)
-    if second > first
-      return second
+    if second.present?
+      if second > first
+        return second
+      else
+        return first
+      end
     else
       return first
     end
@@ -65,7 +69,7 @@ class TicketReaderApiResultParser
     receipt = @data[:document][:inference][:prediction]
 
     PARSING_ERRORS.keys.each do |field|
-      next if receipt[field][:confidence] >= 0.7
+      next if receipt[field][:confidence] >= 0.65
 
       @result[:status] = :error
       @result[:error_message] = PARSING_ERRORS[field]
