@@ -46,7 +46,8 @@
 #total {
   color: #FF6978;
   font-weight: bolder;
-  font-size: 24px;
+  font-size: 28px;
+  margin-bottom: 16px;
 }
 
 .scanticket .btn-gradient {
@@ -58,4 +59,11 @@
   object-position: center;
   transition: background 0.3s ease;
   border: 1px solid #214A7B;
+}
+ .cashback_immediat h1{
+   margin: 0 !important;
+ }
+
+ .cashback_total h1{
+  margin: 0 !important;
 }

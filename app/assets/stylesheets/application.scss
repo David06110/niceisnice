@@ -23,6 +23,7 @@ body {
   width: 100vw;
   grid-template-rows: 1fr auto;
   // background-image: linear-gradient(to bottom, #5090f0, #78a8f3, #9dc0f5, #c2d7f5, #e8eef6);
+  text-align: center;
 }
 
 main {
@@ -32,8 +33,8 @@ main {
 }
 
 .background {
-  padding-left: 4px;
-  padding-right: 4px;
+  // padding-left: 4px;
+  // padding-right: 4px;
 }
 
 .txt-white-center {
@@ -51,7 +52,7 @@ h1 {
   font-weight: bold;
   color: #09203be0;
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
 
